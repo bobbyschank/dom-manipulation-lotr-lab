@@ -193,10 +193,12 @@ itsDangerousToGoAlone();
 // Part 11
 function weWantsIt() {
   // Create a div with an id of 'gollum' and add it to Mordor
-  var mordy = document.getElementById("Mordor");
-  console.log()
-  var golly = document.createElement("div").setAttribute("id", "gollum");
-  mordy.appendChild(golly);
+  var mord = document.getElementById("Mordor");
+  console.log("Mordor" + mord);
+  var gollum = document.createElement("div");
+  gollum.setAttribute("id", "gollum");
+  gollum.textContent = "Gollum";
+  mord.appendChild(gollum);
   // Remove the ring from Frodo and give it to Gollum
   gollum.appendChild(document.getElementById("the-ring"));
   // Move Gollum into Mount Doom
